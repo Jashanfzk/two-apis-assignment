@@ -1,0 +1,37 @@
+node_modules/
+
+# Env
+.env
+.env.*
+!.env.sample
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors/IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Build/output
+coverage/
+dist/
+build/
+.tmp/
+.temp/
+
+# Vercel local
+.vercel/
+
+# Misc
+*.local
+*.swp
+.history/

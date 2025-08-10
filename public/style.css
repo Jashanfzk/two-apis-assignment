@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary: #3d7bfd;
+  --text: #222;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: var(--text);
+  line-height: 1.6;
+}
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+h1 {
+  margin: 10px 0 6px;
+  font-size: 28px;
+  color: var(--primary);
+}
+.small {
+  color: #555;
+  font-size: 13px;
+}
+
+header {
+  border-bottom: 1px solid #e7eaf3;
+  background: #fff;
+}
+main {
+  background: #fff;
+  border: 1px solid #e7eaf3;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin: 14px 0;
+}
+input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+}
+input::placeholder {
+  color: #8896ab;
+}
+button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #e9f0ff;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  background: #dce8ff;
+}
+#status {
+  margin: 8px 0 12px;
+  color: #0b3a75;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+  border-color: #9bb4f8;
+  box-shadow: 0 0 0 2px rgba(61, 123, 253, 0.15);
+}
+button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.news-item {
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.news-item a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #0b57d0;
+  font-size: 18px;
+}
+.news-item a:hover {
+  text-decoration: underline;
+}
+.news-item p {
+  margin: 6px 0 0;
+}
+
+.translate-wrap {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  align-items: center;
+}
+select {
+  padding: 6px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+}
+.translate-wrap button {
+  background: #fff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.translate-wrap button:hover {
+  background: var(--primary);
+  color: #fff;
+}
+.translated {
+  background: #f8fbff;
+  border: 1px solid #e5edf8;
+  padding: 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+footer {
+  text-align: center;
+  color: #777;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 560px) {
+  form {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}

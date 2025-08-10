@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title #{title}
+    link(rel="stylesheet", href="/style.css")
+  body
+    header
+      h1 Global News Translator
+      p.small Search English news and translate the summary to a language you pick.
+
+    main
+      form#searchForm
+        input#query(type="text" placeholder="Type a topic, e.g. basketball or AI")
+        button(type="submit") Search
+      p#status
+
+      section#results
+
+    footer
+      p.small © #{new Date().getFullYear()} — Jashan project
+    script(src="/app.js")
